@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-	<title>three.js webgl - GLTFloader</title>
+	<title>TRACK THE SPACE STATION IN 3D</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
 	<link type="text/css" rel="stylesheet" href="main.css">
@@ -48,6 +48,10 @@
 			camera.position.set(9000, 0, 0);
 
 			scene = new THREE.Scene();
+
+
+
+
 
 			new RGBELoader()
 				.setPath('textures/equirectangular/')
@@ -125,12 +129,11 @@
 
 			requestAnimationFrame(animate);
 
-			earth.rotation.y += 0.001;
-			
+			earth.rotation.y += 0.0001;
+
 
 			const elapsed = clock.getElapsedTime();
-			iss.position.set(Math.sin(elapsed) * 6800, 0, Math.cos(elapsed) * 6800);
-
+			iss.position.set(Math.sin(elapsed / 20) * 6800, 0, Math.cos(elapsed / 20) * 6800);
 			renderer.render(scene, camera);
 			labelRenderer.render(scene, camera);
 
