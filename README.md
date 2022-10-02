@@ -7,7 +7,7 @@
 <b>An option where the web application is running on the server</b>
 <p></p>
 <img src="/TRACK_THE_SPACE_STATION_IN_3D/git_img/site_img.png" alt="">
-<img src="/TRACK_THE_SPACE_STATION_IN_3D/git_img/site_img_2.png" alt="">
+<img src="/TRACK_THE_SPACE_STATION_IN_3D/git_img/site_img_3.png" alt="">
 
 <b>Demo Video</b>
 
