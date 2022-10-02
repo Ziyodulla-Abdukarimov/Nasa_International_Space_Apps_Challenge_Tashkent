@@ -76,6 +76,10 @@
 						render();
 
 					});
+					loader.load('line2.gltf', function( gltf ){
+						gltf.scene.scale.set(6800, 6800, 6800);
+						scene.add( gltf.scene );
+					});
 					loader.load('earth2.glb', function (gltf) {
 						earth = gltf.scene;
 						gltf.scene.scale.set(6400, 6400, 6400);
